@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="16x16" href="./photos/aries/favicon-32x32.png">
+    
+    <title>Horoscope</title>
+  </head>
+  <body>
+    <main class="app">
+      <div class="app__container">
+        <div class="app__content-wrapper">
+          <h1 class="app__title">Daily Horoscope</h1>
+          <h2 class="app__current-date"></h2>
+          <form class="form">
+            <div class="form__sign-inputs">
+
+              <label for="selectedSign">Pick your sign</label>
+              <select
+                onchange="myFunction()"
+                type="select"
+                class="sign-input"
+                name="sign"
+                id="selectedSign">
+
+                <option value="Aries">Aries</option>
+                <option value="Taurus">Taurus</option>
+                <option value="Gemini">Gemini</option>
+                <option value="Cancer">Cancer</option>
+                <option value="Leo">Leo</option>
+                <option value="Virgo">Virgo</option>
+                <option value="Libra">Libra</option>
+                <option value="Scorpio">Scorpio</option>
+                <option value="Sagittarius">Sagittarius</option>
+                <option value="Capricorn">Capricorn</option>
+                <option value="Aquarius">Aquarius</option>
+                <option value="Pisces">Pisces</option>
+              </select>
+              </div>
+
+              <div class="form__decision">
+                <p class="form__decision-text">OR</p>
+              </div>
+
+              <div class="form__birthday-inputs">
+              <label for="birthday">Enter birthday</label>
+              <input
+              
+                type="text"
+                class="birthday-input"
+                name="birthday"
+                id="birthday"
+                placeholder="MM/DD"
+              />
+            </div>
+          </form>
+
+          <h1 class="app__sign"></h1>
+          <div class="app__date-range"></div>
+          <div class="app__description"></div>
+        </div>
+        
+        <div class="app__img-box">
+          <img class="app__img" src="./photos/Screen Shot 2022-05-16 at 8.10.07 PM.png" alt="The horoscope signs and symbols  ">
+        </div>
+
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
