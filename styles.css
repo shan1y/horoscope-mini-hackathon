@@ -19,7 +19,6 @@
   border-radius: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   padding: 1rem;
   -webkit-animation: glow 2s ease-in-out infinite alternate;
@@ -61,7 +60,7 @@
   }
 }
 .app__title {
-  padding-top: 2rem;
+  padding-top: 3.5rem;
 }
 @media (min-width: 768px) {
   .app__title {
