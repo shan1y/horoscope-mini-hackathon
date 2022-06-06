@@ -1,0 +1,173 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url("./photos/jeremy-bishop-bAXBuCBHfRc-unsplash.jpg");
+  background-position: center;
+}
+.app__container {
+  background-color: rgba(0, 0, 0, 0.7);
+  min-height: 70vh;
+  width: 80%;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  -webkit-animation: glow 2s ease-in-out infinite alternate;
+          animation: glow 2s ease-in-out infinite alternate;
+}
+@media (min-width: 768px) {
+  .app__container {
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 2rem;
+    margin: 2rem;
+  }
+}
+@media (min-width: 1280px) {
+  .app__container {
+    min-height: 53vh;
+  }
+}
+@-webkit-keyframes glow {
+  from {
+    box-shadow: 0 0 5px rgb(101, 40, 123), 0 0 10px rgb(75, 3, 71), 0 0 15px #57186c, 0 0 20px #2b0d51, 0 0 25px #2b0d51, 0 0 30px #2b0d51, 0 0 35px #2b0d51;
+  }
+  to {
+    box-shadow: 0 0 10px rgb(114, 13, 151), 0 0 15px #4a066a, 0 0 20px #4a066a, 0 0 25px #4a066a, 0 0 30px #4a066a, 0 0 35px #4a066a, 0 0 40px #4a066a;
+  }
+}
+.app__content-wrapper {
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+@media (min-width: 768px) {
+  .app__content-wrapper {
+    align-items: flex-start;
+    margin-top: 2em;
+  }
+}
+.app__title {
+  padding-top: 2rem;
+}
+@media (min-width: 768px) {
+  .app__title {
+    padding-top: 0rem;
+  }
+}
+@media (min-width: 1440px) {
+  .app__title {
+    padding: 1em 0;
+    font-size: 3em;
+  }
+}
+.app__sign {
+  margin-top: 1em;
+}
+.app__description {
+  line-height: 1.5;
+  height: 8rem;
+  max-width: 25rem;
+  font-size: 0.875rem;
+}
+@media (min-width: 600px) {
+  .app__description {
+    font-size: 1rem;
+  }
+}
+.app__img-box {
+  display: none;
+}
+@media (min-width: 900px) {
+  .app__img-box {
+    display: flex;
+    padding: 1em;
+    width: 40%;
+  }
+}
+@media (min-width: 1440px) {
+  .app__img-box {
+    width: 40%;
+    margin: 1em;
+    margin-top: 2em;
+  }
+}
+.app__img {
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  width: 100%;
+}
+
+body {
+  color: white;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+}
+
+label {
+  color: white;
+}
+
+.form__birthday-inputs {
+  width: 100%;
+}
+.form__sign-inputs {
+  width: 100%;
+}
+.form__decision {
+  padding: 1em 0;
+}
+
+.sign-input {
+  height: 2rem;
+  border-radius: 0.25rem;
+  padding-left: 6px;
+}
+
+.birthday-input {
+  height: 2rem;
+  border-radius: 0.25rem;
+  border-style: none;
+  padding-left: 6px;
+}
+.birthday-input:focus {
+  outline-width: 0;
+}
+.birthday-input:focus::-moz-placeholder {
+  color: transparent;
+}
+.birthday-input:focus:-ms-input-placeholder {
+  color: transparent;
+}
+.birthday-input:focus::placeholder {
+  color: transparent;
+}
+.birthday-input--error {
+  border-style: unset;
+  border: 2px solid rgb(255, 0, 0);
+}
+
+.birthday-input::-moz-placeholder {
+  padding-left: 6px;
+}
+
+.birthday-input:-ms-input-placeholder {
+  padding-left: 6px;
+}
+
+.birthday-input::placeholder {
+  padding-left: 6px;
+}/*# sourceMappingURL=styles.css.map */
